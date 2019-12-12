@@ -112,7 +112,7 @@ if [ -n "${XWAYLAND_I3_CONFIG_FILE-}" ]; then
   I3_CONFIG="${XWAYLAND_I3_CONFIG_FILE}"
 elif [ -n "${XWAYLAND_FULLSCREEN_WINDOW_HINT-}" ]; then
   # Am using i3 here, so generate a simple config file for it.
-  I3_CONFIG=$SNAP_DATA/i3.config
+  I3_CONFIG=$SNAP_USER_DATA/i3.config
 
   cat <<EOF > "$I3_CONFIG"
 # i3 config file (v4)
