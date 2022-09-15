@@ -146,7 +146,7 @@ export CLUTTER_BACKEND="x11"
 export QT_QPA_PLATFORM="xcb"
 
 $SNAP/usr/bin/i3 -c "$I3_CONFIG" &
-
+echo "DEBUG: " $@
 # Launch the X11 process passed in
-"$@"
+# "$@"
 
